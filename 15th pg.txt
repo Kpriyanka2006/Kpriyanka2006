@@ -1,0 +1,23 @@
+// write a c program to check wheter the given three sides of a triangles from a valid right angaled triangle using conditional statements.
+#include <stdio.h>
+int main() {
+    double a, b, c;
+    printf("Enter the three sides of the triangle: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+    if ((a > 0 && b > 0 && c > 0) && 
+        ((a * a + b * b == c * c) || 
+         (a * a + c * c == b * b) || 
+         (b * b + c * c == a * a))) {
+        printf("The given sides form a valid right-angled triangle.\n");
+    } else {
+        printf("The given sides do not form a valid right-angled triangle.\n");
+    }
+ return 0;
+}
+
+output
+Enter the three sides of the triangle: 3 6 9
+The given sides do not form a valid right-angled triangle.
+
+
+=== Code Execution Successful ===

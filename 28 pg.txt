@@ -1,0 +1,22 @@
+//write a c program to reverse the digite of a given number using a while loop
+#include <stdio.h>
+
+int main() {
+    int number, reversedNumber = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    while (number != 0) {
+        remainder = number % 10;         
+        reversedNumber = reversedNumber * 10 + remainder; 
+        number /= 10;
+    }
+    printf("Reversed number: %d\n", reversedNumber);
+    return 0;
+}
+
+output
+Enter an integer: 19978
+Reversed number: 87991
+
+
+=== Code Execution Successful ===

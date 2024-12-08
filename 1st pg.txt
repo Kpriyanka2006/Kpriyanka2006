@@ -1,0 +1,20 @@
+// write a c program to check whether the user entered integer is a positive or a negative number   
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    if (num > 0) {
+        printf("The number is positive.\n");
+    } else 
+        printf("The number is negative.\n");
+    return 0;
+}
+
+output
+Enter an integer: 20
+The number is positive.
+
+
+=== Code Execution Successful ===

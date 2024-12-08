@@ -1,0 +1,19 @@
+//write a c program to check if a year is a leap year  or not using conditional statement.
+#include <stdio.h>
+int main()
+{
+    int year;
+    printf("Enter a year: ");
+    scanf("%d", &year);
+    (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) ?
+        printf("%d is a leap year.\n", year) :
+        printf("%d is not a leap year.\n", year);
+ return 0;
+}
+
+output
+Enter a year: 2024
+2024 is a leap year.
+
+
+=== Code Execution Successful ===
